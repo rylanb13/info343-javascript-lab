@@ -8,7 +8,8 @@
 */ 
 
 function addition() {
-	// your code goes here!
+    alert(parseFloat(document.getElementById('additionInput1').value) + parseFloat(document.getElementById('additionInput2').value));
+
 }
 
 /* --------------------------------------------------------- */
@@ -28,7 +29,17 @@ function addition() {
 */ 
 
 function vowelCounter() {
-	// your code goes here!
+	var string = document.getElementById('vowelInput').value;
+    string = string.toLowerCase();
+    string = string.split('');
+    var count = 0;
+    var idx;
+    for (idx = 0; idx < string.length; ++idx) {
+        if (string[idx] == 'a' || string[idx] == 'e' || string[idx] == 'i' || string[idx] == 'o' || string[idx] == 'u') {
+            ++count;
+        }
+    }
+    alert(count);
 }
 
 /* --------------------------------------------------------- */
@@ -63,7 +74,7 @@ function submit() {
 }
 
 function reset() {
-
+    var randomNumber = Math.floor(Math.random()*101)
 }
 
 
